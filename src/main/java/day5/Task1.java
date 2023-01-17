@@ -18,6 +18,7 @@ class Car{
     public void setAge (int ageOut){
         age = ageOut;
     }
+
     public int getAge(){
         return age;
     }
@@ -25,6 +26,7 @@ class Car{
     public void setColor (String colorAuto){
         color = colorAuto;
     }
+
     public String getColor(){
         return color;
     }
@@ -32,6 +34,7 @@ class Car{
     public void setModel (String modelAuto){
         model = modelAuto;
     }
+
     public String getModel(){
         return model;
     }
