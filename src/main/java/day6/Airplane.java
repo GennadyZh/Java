@@ -2,12 +2,14 @@ package day6;
 
 public class Airplane {
     public static void main(String[] args) {
-        Airplane mig = new Airplane("Mikoyan",1990,220,100);
+        Airplane mig = new Airplane("Mikoyan", 1990, 220, 100);
         mig.setYear(13);
         mig.setLength(123);
-        mig.getFuel(30);
-        Airplane.info();
-        System.out.println(Airplane.fillUp(5));
+        mig.fillUp(33);
+        mig.setFuel(3000);
+        mig.fillUp(33);
+        mig.info();
+
     }
 
 
@@ -16,30 +18,38 @@ public class Airplane {
         this.year = year;
         this.length = length;
         this.weight = weight;
+        this.fuel = 0;
     }
 
-    public static String producer;
-    public static int year;
-    public static int length;
-    public static int weight;
-    public static int fuel;
+    private String producer;
+    private int year;
+    private int length;
+    private int weight;
+    private int fuel;
 
-    public void setYear(int year){
+    public void setYear(int year) {
         this.year = year;
     }
 
-    public void setLength(int length){
+    public void setLength(int length) {
         this.length = length;
     }
 
-    public int getFuel(int fuel){
+    public void setFuel(int fuel) {
+        this.fuel = fuel;
+    }
+
+    public int getFuel(int fuel) {
         return fuel;
     }
-    public static void info(){
-        System.out.println("Изготовитель: " + producer + ", " + "год выпуска: " + year + ", " +"длина " + length + ", " + "кол-во топлива в баке: " + fuel);
+
+    public void info() {
+        System.out.println("Изготовитель: " + producer + ", " + "год выпуска: " + year + ", " + "длина " + length
+                + ", " + "кол-во топлива в баке: " + fuel);
     }
-    public static int fillUp(int howManyFuel){
-        return (fuel - howManyFuel);
+
+    public void fillUp(int howManyFuel) {
+        fuel += howManyFuel;
     }
 
 }
