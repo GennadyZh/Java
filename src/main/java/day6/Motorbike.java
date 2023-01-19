@@ -20,4 +20,8 @@ class Motorbike {
         public String getColor(){
             return color;
         }
-    }
+
+        public int yearDifference(int inputYear){
+        return (inputYear - age);
+        }
+}

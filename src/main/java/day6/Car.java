@@ -29,4 +29,8 @@ class Car {
         return model;
     }
 
+    public int yearDifference(int inputYear){
+        return Math.abs(inputYear - age);
+    }
+
 }
