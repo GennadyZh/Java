@@ -44,6 +44,7 @@ public class Teacher {
                 } else if (grade == 2) {
                     i = "плохо";
                 }
+        System.out.println(diff);
         System.out.println("Преподаватель " + name + " оценил студента " + nameSdt + " по предмету " + subject + " на оценку: " + i);
     }
 }
