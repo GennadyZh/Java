@@ -1,4 +1,4 @@
-package org.example;
+package main.java.org.example;
 
 public class Break_Continue {
     public static void main (String[] args) {
